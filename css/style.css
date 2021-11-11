@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.hero-section {
+    background-image: url(/img/hero2.jpg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: 0 50%;
+}
+
+.hero-text {
+    padding-top: 100px;
+}
+
+.car-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.car-card {
+    width: 32%;
+    background-color: rgba(2, 23, 24, 0.501);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.car-image img {
+    height: 300px;
+    width: 100%;
+}
+
+.btn-light:hover{
+    background-color: rgb(209, 71, 56);
+    border: solid 1px #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    .car-section {
+        flex-direction: column;
+    }
+    .car-card {
+        width: 100%;
+    }
+}
